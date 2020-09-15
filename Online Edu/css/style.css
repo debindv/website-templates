@@ -1,0 +1,1554 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	outline: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+header, section, article, aside, nav, footer, address {
+	display: block;
+}
+body {
+	font-family: 'open_sansregular',Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #333;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+input,textarea,select{
+	font-family: 'open_sansregular',Arial, Helvetica, sans-serif;
+}
+p{
+	line-height: 1.6em;
+}
+br.clear{
+	clear: both;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+a:hover,[type="submit"]:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal
+}
+
+#home {
+	padding: 0 20px;
+	width: 100%;
+}
+#home section.wrapper header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	margin-bottom: 120px;
+}
+
+#home section.wrapper header h1.left {
+	width: 200px;
+}
+
+#home section.wrapper header h1.left a {
+	display: inline-block;
+}
+
+#home section.wrapper header h1.left a img {
+	width: 100%;
+	display: block;
+}
+
+#home section.wrapper header nav.middle {
+
+}
+
+#home section.wrapper header nav.middle ul {
+	display: flex;
+	align-items: center;
+}
+
+#home section.wrapper header nav.middle ul li {
+	margin-right: 50px;
+	font-size: 15px;
+	font-family: 'Circular-Std-Regular';
+	color: #000;
+
+}
+
+#home section.wrapper header nav.middle ul li:last-child {
+	margin-right: 0;
+}
+
+#home section.wrapper header nav.middle ul li span {
+	color: #fff;
+}
+#home section.wrapper header nav.middle ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
+
+#home section.wrapper header nav.middle ul li a img {
+	display: inline-block;
+	margin-left: 5px;
+	top: -2px;
+	position: relative;
+
+}
+#home section.wrapper header nav.middle ul li a.button {
+	padding: 15px 21px;
+    background: linear-gradient(45deg, #45B4FE, #54ECFE);
+	border-radius: 30px;
+	color: #fff;
+}
+#spotlight {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+#spotlight div.left {
+	width: 75%;
+}
+
+#spotlight div.left small{
+	width: 70px;
+	margin-right: 10px;
+	display: inline-block;
+	border-bottom: 2px solid #45B4FE;
+}
+
+#spotlight div.left span {
+	font-size: 14px;
+	color: #B0B0B0;
+	font-family: 'Circular-Std-Regular';
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+
+#spotlight div.left h1 {
+	font-size: 66px;
+	font-family: 'Circular-Std-Bold';
+	font-weight: bold;
+	color: #171063;
+	margin-top: 10px;
+
+}
+
+#spotlight div.left p {
+	margin: 20px 0 80px 0;
+	font-family: 'Circular-Std-Regular';
+	font-size: 16px;
+	color: #B0B0B0;
+}
+
+#spotlight div.left div.buttons {
+
+}
+
+#spotlight div.left div.buttons a {
+
+}
+
+#spotlight div.left div.buttons a.button1 {
+	padding: 15px 30px;
+    background: linear-gradient(45deg, #45B4FE, #54ECFE);
+	border-radius: 35px;
+	color: #fff;
+	margin-right: 10%;
+	display: inline-block;
+	font-size: 14px;
+}
+
+#spotlight div.left div.buttons a.button2 {
+	padding: 15px 30px;
+	border-radius: 35px;
+	color: #5C95C5;
+	border: 1px solid #86AFD4;
+	display: inline-block;
+	font-size: 14px;
+}
+
+#spotlight div.right {
+	/*width: 50%;*/
+}
+
+#spotlight div.right img {
+	width:100%;
+	display: block;
+	margin-left: 110px;
+}
+
+#feature {
+	padding-top: 250px;
+	width: 100%;
+}
+
+#feature section.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+#feature section.wrapper div.left {
+	width: 40%;
+}
+
+#feature section.wrapper div.left h1 {
+	font-family: 'Circular-Std-Bold'; 
+	font-size: 48px;
+	color: #171063;
+	font-weight: bold;
+}
+
+#feature section.wrapper div.left p {
+	margin: 20px 0 80px 0;
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+	width: 58%;
+}
+
+#feature section.wrapper div.left a.button {
+	padding: 15px 30px;
+    background: linear-gradient(45deg, #45B4FE, #54ECFE);
+	border-radius: 35px;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+}
+
+#feature section.wrapper div.right {
+	width: 60%;
+}
+
+#feature section.wrapper div.right ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+#feature section.wrapper div.right ul li {
+	border: 1px solid #4FACFE;
+	width: 21%;
+	text-align: center;
+	padding: 55px 37px;
+}
+
+#feature section.wrapper div.right ul li:last-child {
+
+}
+
+#feature section.wrapper div.right ul li span {
+	background-color: #4FACFE;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+	display: flex;
+	border-radius: 50px;
+	align-items: center;
+    justify-content: center;
+}
+
+#feature section.wrapper div.right ul li span img {
+
+}
+
+#feature section.wrapper div.right ul li h4 {
+	font-family: 'Circular-Std-Regular';
+	color: #1D1D1D;
+	font-size: 18px;
+	margin: 28px 0;
+}
+
+#feature section.wrapper div.right ul li p {
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 14px;
+}
+
+#about {
+	padding: 150px 0;
+	width: 100%;
+}
+
+#about section.wrapper {
+	display: flex;
+}
+
+#about section.wrapper div.left {
+	width: 50%;
+	margin-right: 50px;
+}
+
+#about section.wrapper div.left img {
+	width: 100%;
+	display: block;
+}
+
+#about section.wrapper div.right {
+	width: 45%;
+	margin-left: 70px;
+}
+
+#about section.wrapper div.right small {
+	width: 60px;
+	margin-right: 10px;
+	display: inline-block;
+	border-bottom: 2px solid #45B4FE;
+}
+
+#about section.wrapper div.right span {
+	font-size: 14px;
+	color: #B0B0B0;
+	font-family: 'Circular-Std-Regular';
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+#about section.wrapper div.right h1 {
+	font-family: 'Circular-Std-Bold'; 
+	font-size: 48px;
+	color: #171063;
+	font-weight: bold;
+}
+
+#about section.wrapper div.right p {
+	margin: 20px 0 80px 0;
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+	width: 90%;
+}
+
+#about section.wrapper div.right a.button {
+	padding: 15px 30px;
+    background: linear-gradient(45deg, #45B4FE, #54ECFE);
+	border-radius: 35px;
+	color: #fff;
+	margin-right: 10%;
+	display: inline-block;
+	font-size: 14px;
+}
+
+#faculty {
+	background: linear-gradient( to right, #45B4FE , #54EBFE);
+	padding: 100px 0;
+	width: 100%;
+}
+
+#faculty section.wrapper ul {
+	display: flex;
+    justify-content: space-between;
+}
+
+#faculty section.wrapper ul li {
+	text-align: center;
+}
+
+#faculty section.wrapper ul li span.number {
+	font-size: 64px;
+    font-family: 'Circular-Std-Bold';
+	color: #fff;
+}
+
+#faculty section.wrapper ul li small {
+	width:60px;
+	display: inline-block;
+	border-bottom: 2px solid  #fff;
+}
+
+#faculty section.wrapper ul li h4 {
+	font-size: 23px;
+    margin-top: 12%;
+	color: #fff;
+	font-family: 'Circular-Std-Regular';
+}
+
+#courses {
+	padding-top: 100px;
+	width: 100%;
+}
+
+#courses section.wrapper div.top {
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+#courses section.wrapper div.top small {
+	width:60px;
+	margin-right: 10px;
+	display: inline-block;
+	border-bottom: 2px solid  #45B4FE;
+}
+
+#courses section.wrapper div.top span {
+	font-size: 14px;
+	color: #B0B0B0;
+	font-family: 'Circular-Std-Regular';
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+#courses section.wrapper div.top h1 {
+	font-family: 'Circular-Std-Bold'; 
+	font-size: 48px;
+	color: #171063;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#courses section.wrapper div.bottom {
+
+}
+
+#courses section.wrapper div.bottom ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+#courses section.wrapper div.bottom ul li {
+	border: 1px solid #50AAF8;
+	border-radius: 20px 20px 0 0;
+	width: 32%;
+}
+
+#courses section.wrapper div.bottom ul li div.container {
+	margin-bottom: 30px;
+}
+
+#courses section.wrapper div.bottom ul li div.container img {
+	width:100%;
+	border-radius: 20px 20px 0 0;
+	display: block;
+}
+
+#courses section.wrapper div.bottom ul li div.items {
+	padding: 10px 25px 15px 24px;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.content {
+	border-bottom: 1px solid #A8A8A8;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.content div.top {
+	display: flex;
+	justify-content:space-between;
+	padding: 0 ;
+	align-items: center;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.content div.top a.button {
+	background-color: #4FACFE;
+	padding: 10px 17px;
+	color: #fff;
+	font-family: 'Circular-Std-Regular';
+	font-size: 14px;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.content div.top span.number {
+	color: #4384BC;
+	font-size: 20px;
+	font-family: 'Circular-Std-Bold'; 
+	float: right;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.content h1 {
+	color: #3B7FB9;
+	font-size: 23px;
+	font-family: 'Circular-Std-Regular';
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.content p {
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+	margin: 15px 0;
+}
+
+#courses section.wrapper div.bottom ul li div.bottom {
+	display: flex;
+	justify-content: space-between;
+    padding: 20px 0 15px 0;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.bottom div.left {
+	display: flex;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.bottom div.left a {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.bottom div.left a img {
+	width: 100%;
+	display: block;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.bottom div.left div.text {
+	margin-top: 10px;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.bottom div.left div.text h6.top {
+	font-size: 14px;
+	color: #A8A8A8;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.bottom div.left div.text h6 {
+	font-size: 14px;
+	color: #337AB7;
+	font-weight: bold;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.bottom div.right {
+
+}
+
+#courses section.wrapper div.bottom ul li div.items div.bottom div.right img {
+	width: 15%;
+	display:inline-block;
+}
+
+#courses section.wrapper div.bottom ul li div.items div.bottom div.right span {
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 14px; 
+	text-align: center;
+}
+
+#advance {
+	padding-top: 200px;
+	width: 100%;
+}
+
+#advance section.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+#advance section.wrapper div.left {
+	width: 50%;
+}
+
+#advance section.wrapper div.left div.top {
+
+}
+
+#advance section.wrapper div.left div.top small {
+	width:60px;
+	margin-right: 10px;
+	display: inline-block;
+	border-bottom: 2px solid  #45B4FE;
+}
+
+#advance section.wrapper div.left div.top span {
+	font-size: 14px;
+	color: #B0B0B0;
+	font-family: 'Circular-Std-Regular';
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+#advance section.wrapper div.left div.top h1 {
+	font-family: 'Circular-Std-Bold'; 
+	font-size: 48px;
+	color: #171063;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#advance section.wrapper div.left div.top p {
+	margin: 20px 0 80px 0;
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+	width: 90%;
+}
+
+#advance section.wrapper div.left div.bottom {
+
+}
+
+#advance section.wrapper div.left div.bottom ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+#advance section.wrapper div.left div.bottom ul li {
+
+}
+
+#advance section.wrapper div.left div.bottom ul li span {
+	background-color: #4FACFE;
+	margin-bottom: 10%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+	border-radius: 50px;
+	align-items: center;
+    justify-content: center;
+}
+
+#advance section.wrapper div.left div.bottom ul li img {
+	display: block;
+	/*width: 100%;*/
+}
+
+#advance section.wrapper div.left div.bottom ul li h4 {
+	font-family: 'Circular-Std-Regular';
+	font-size: 23px;
+	color: #337AB7;
+}
+
+#advance div.left div.bottom ul li p {
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+	margin: 20px 0 80px 0;
+	width: 90%;
+}
+
+#advance section.wrapper div.right {
+	width: 50%;
+}
+
+#advance section.wrapper div.right img {
+	display: block;
+	width: 100%;
+}
+
+#testimonial {
+	padding-top: 150px;
+	width: 100%;
+
+}
+
+
+#testimonial section.wrapper div.top {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+#testimonial section.wrapper div.top small {
+	width:60px;
+	margin-right: 10px;
+	display: inline-block;
+	border-bottom: 2px solid  #45B4FE;
+}
+
+#testimonial section.wrapper div.top span {
+	font-size: 14px;
+	color: #B0B0B0;
+	font-family: 'Circular-Std-Regular';
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+#testimonial section.wrapper div.top h1 {
+	font-family: 'Circular-Std-Bold'; 
+	font-size: 48px;
+	color: #171063;
+	font-weight: bold;
+	margin-top: 20px;
+}
+#testimonial section.wrapper div.slide {
+	display: flex;
+	align-items: center;
+}
+#testimonial section.wrapper div.bottom {
+	display: flex;
+	width: 100%;
+	/*justify-content: space-between;*/
+	align-items: center;
+	/*margin-right: 30px;*/
+}
+
+#testimonial section.wrapper div.bottom div.container {
+	width: 25%;
+}
+#testimonial section.wrapper div.bottom div.item {
+	width: 75%;
+}
+#testimonial section.wrapper div.bottom div.container img {
+	width: 100%;
+	display: block;
+	height: 350px;
+}
+
+#testimonial section.wrapper div.bottom div.item div.content {
+	box-shadow: 0 4px 4px 0 rgba(52, 124, 193, 0.1), 0 0 10px rgba(52, 124, 193, 0.1);
+	background-color: #fff;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 25px 80px;
+	/*width: 650px;*/
+	margin-left: 30px;
+
+}
+
+#testimonial section.wrapper div.bottom div.item div.content p {
+	font-size: 16px;
+	color: #BABABA;
+	font-family: 'Circular-Std-Regular';
+	font-style: italic;
+}
+
+#testimonial section.wrapper div.bottom div.item div.content div.name {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+#testimonial section.wrapper div.bottom div.item div.content div.name h2 {
+	font-family: 'Circular-Std-Bold'; 
+	font-size: 21px;
+	color: #337AB7;
+}
+
+#testimonial section.wrapper div.bottom div.item div.content div.name img {
+	display: block;
+	
+}
+
+#testimonial section.wrapper div.star {
+	margin-top: 50px;
+	align-items: center;
+	text-align: center;
+}
+
+#testimonial section.wrapper div.star img {
+	display: inline-block;
+}
+#blog {
+	padding-top: 100px;
+	width: 100%;
+}
+
+#blog section.wrapper {
+
+}
+
+#blog section.wrapper div.top {
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+#blog section.wrapper div.top small {
+	width:60px;
+	margin-right: 10px;
+	display: inline-block;
+	border-bottom: 2px solid  #45B4FE;
+}
+
+#blog section.wrapper div.top span {
+	font-size: 14px;
+	color: #B0B0B0;
+	font-family: 'Circular-Std-Regular';
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+#blog section.wrapper div.top h1 {
+	font-family: 'Circular-Std-Bold'; 
+	font-size: 48px;
+	color: #171063;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#blog section.wrapper div.bottom {
+
+}
+
+#blog section.wrapper div.bottom ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+#blog section.wrapper div.bottom ul li {
+	border: 1px solid #50AAF8;
+	border-radius: 20px 20px 0 0;
+	width: 32%;
+}
+
+#blog section.wrapper div.bottom ul li div.container {
+	margin-bottom: 30px;
+}
+
+#blog section.wrapper div.bottom ul li div.container img {
+	width:100%;
+	border-radius: 20px 20px 0 0;
+	display: block;
+}
+
+#blog section.wrapper div.bottom div.items {
+	padding: 10px 25px 15px 24px;
+}
+
+#blog section.wrapper div.bottom div.items div.content {
+	border-bottom: 1px solid #A8A8A8;
+}
+
+#blog section.wrapper div.bottom div.items div.content div.top {
+	display: flex;
+	justify-content:space-between;
+	padding: 0 ;
+}
+
+#blog section.wrapper div.bottom div.items div.content div.top a.button {
+	background-color: #4FACFE;
+	padding: 10px 17px;
+	color: #fff;
+	font-family: 'Circular-Std-Regular';
+	font-size: 14px;
+}
+
+#blog section.wrapper div.bottom div.items div.content div.top span.number {
+	color: #4384BC;
+	font-size: 20px;
+	font-family: 'Circular-Std-Bold'; 
+	float: right;
+}
+
+#blog section.wrapper div.bottom div.items div.content h3 {
+	color: #3B7FB9;
+	font-size: 17px;
+	font-family: 'Circular-Std-Regular';
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#blog section.wrapper div.bottom div.items div.content p {
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+	margin: 15px 0;
+}
+
+#blog section.wrapper div.bottom div.items div.bottom {
+	display: flex;
+	justify-content: space-between;
+    padding: 20px 0 15px 0;
+    align-items: center;
+}
+
+#blog section.wrapper div.bottom div.items div.bottom div.left {
+	display: flex;
+	align-items: center;
+}
+
+#blog section.wrapper div.bottom div.items div.bottom div.left a {
+	display: inline-block;
+	margin-right: 10px;
+	
+}
+
+#blog section.wrapper div.bottom div.items div.bottom div.left a img {
+	width: 13px;
+	display: inline-block;
+}
+
+#blog section.wrapper div.bottom div.items div.bottom div.left span {
+	font-family: 'Circular-Std-Regular';
+	font-size: 15px;
+}
+
+#blog section.wrapper div.bottom div.items div.bottom div.right a{
+	display: inline-block;
+	margin-right: 10px;
+
+}
+
+#blog section.wrapper div.bottom div.items div.bottom div.right a img {
+	width: 13px;
+	display: inline-block;
+}
+
+#blog section.wrapper div.bottom div.items div.bottom div.right span {
+	font-family: 'Circular-Std-Regular';
+	font-size: 15px;
+}
+
+footer {
+	margin-top: 300px;
+	width: 100%;
+}
+
+
+footer section.wrapper div.top {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #C0C0C0;
+	padding-bottom: 125px;
+}
+
+footer section.wrapper div.top div.left {
+	width: 32.5%;
+}
+
+footer section.wrapper div.top div.left a {
+	display: inline-block;
+}
+
+footer section.wrapper div.top div.left a img {
+	display: inline-block;
+}
+
+footer section.wrapper div.top div.left p {
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+	margin: 15px 0;
+	width: 60%;
+}
+
+footer section.wrapper div.top div.middle {
+	width: 35%;
+}
+
+footer section.wrapper div.top div.middle h1 {
+	color: #171063;
+	font-size: 30px;
+	font-family: 'Circular-Std-Bold';
+	font-weight: bold;
+}
+
+footer section.wrapper div.top div.middle p {
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+	margin: 20px 0;
+}
+footer section.wrapper div.top div.middle form {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    padding: 5px 5px 5px 30px;
+	border: 1px solid #45B5FE;
+	width: 86%;
+}
+
+footer section.wrapper div.top div.middle input[type=email] {
+	font-family: 'Circular-Std-Regular';
+	font-size: 15px;
+	color: #B0B0B0;
+	width: 300px;
+	
+}
+
+footer section.wrapper div.top div.middle form a.button {
+	display: inline-block;
+	background: linear-gradient(to right,#43BAFE, #52E5FE);
+	padding: 8px 15px;
+    margin: 4px;
+	color: #fff;
+	border-radius: 8px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+footer section.wrapper div.top div.middle form a.button img {
+
+}
+
+footer section.wrapper div.top div.middle div.social {
+	display: flex;
+	margin-top: 45px;
+
+}
+footer section.wrapper div.top div.middle div.social a span {
+	background-color: #9B9B9B;
+    width: 15px;
+    height: 15px;
+    display: flex;
+	border-radius: 50px;
+	justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-right: 15px;
+}
+
+footer section.wrapper div.top div.middle div.social a img {
+
+}
+footer section.wrapper div.top div.right {
+	width: 22.5%;
+}
+
+footer section.wrapper div.top div.right h1 {
+	color: #171063;
+	font-size: 30px;
+	font-family: 'Circular-Std-Bold';
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+footer section.wrapper div.top div.right ul {
+	
+}
+
+footer section.wrapper div.top div.right ul li {
+	margin-bottom: 10px;
+}
+footer section.wrapper div.top div.right ul li span.left {
+	font-family: 'Circular-Std-Regular';
+	color: #337AB7;
+	font-size: 17px;
+	margin-right: 5px;
+}
+
+footer section.wrapper div.top div.right ul li small {
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+}
+
+footer section.wrapper div.bottom {
+	padding-bottom: 10px;
+}
+footer section.wrapper div.bottom p {
+	font-family: 'Circular-Std-Regular';
+	color: #B0B0B0;
+	font-size: 15px;
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+@media all and (max-width: 1280px){
+	#spotlight div.right img{
+		margin-left: 0;
+	}
+} 
+
+@media all and (max-width: 980px){
+	#spotlight section.wrapper div.left h1 {
+		font-size: 62px;
+	}
+	#home section.wrapper header nav.middle ul li {
+		margin-right: 27px;
+		font-size: 12px;
+	}
+	#home section.wrapper header nav.middle ul li a.button {
+		padding: 10px 15px;
+	}
+	#feature section.wrapper div.left h1 {
+		font-size: 46px;
+	}
+	footer section.wrapper div.top div.middle h1{
+		font-size: 28px;
+	}
+	footer section.wrapper div.top div.right h1 {
+		font-size: 28px;
+	}
+	footer section.wrapper div.top div.right {
+		width: 23.5%;
+	}
+	footer {
+		margin-top: 220px;
+	}
+}
+
+@media all and (max-width: 768px){
+	#home section.wrapper header nav.middle ul li{
+		margin-right: 12px;
+		font-size: 11px;
+	}
+
+	#home section.wrapper header h1.left {
+		width: 130px;
+	}
+	#spotlight div.left small {
+		width: 29px;
+	}
+	#spotlight div.left span {
+		font-size: 12px;
+	}
+	#spotlight div.left h1 {
+		font-size: 53px;
+	}
+	#spotlight div.left div.buttons a.button1 {
+		margin-right: 0;
+	}
+	#feature section.wrapper div.left h1 {
+		font-size: 40px;
+	}
+	#feature section.wrapper div.right ul li {
+		width: 16%;
+		padding: 12px 37px;
+	}
+	#feature section.wrapper div.right ul li h4 {
+		font-size: 16px;
+		margin: 20px 0;
+	}
+	#feature section.wrapper div.right ul li p {
+		font-size: 14px;
+	}
+	#feature section.wrapper div.left a.button{
+		margin-right: 0;
+	}
+	#feature section.wrapper div.right ul li span {
+		width: 70px;
+		height: 70px;
+	}
+	#faculty section.wrapper ul li span.number {
+		font-size: 52px;
+	}
+	#faculty section.wrapper ul li h4 {
+		font-size: 20px;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.content div.top a.button{
+		font-size: 11px;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.content div.top span.number{
+		font-size: 16px;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.content h1 {
+		font-size: 20px;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.content p {
+		font-size: 14px;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.bottom div.left div.text h6.top{
+		font-size: 11px;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.bottom div.left div.text h6 {
+		font-size: 13px;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.bottom div.right img {
+		width: 13%;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.bottom div.right span {
+		display: none;
+	}
+	#courses section.wrapper div.bottom ul li div.bottom {
+		display: block;
+	}
+	#testimonial section.wrapper div.bottom div.container img {
+		display: none;
+	}
+	#about section.wrapper div.right h1 {
+		font-size: 40px;
+	}
+	#feature section.wrapper div.left p {
+		width: 68%;
+	}
+	#courses section.wrapper div.top h1 {
+		font-size: 40px;
+	}
+
+	#advance section.wrapper div.left div.top h1 {
+		font-size: 40px;
+	}
+	#advance section.wrapper div.right img {
+		width: 336px;
+	}
+	#advance section.wrapper div.left div.bottom ul li:first-child{
+		margin-right: 30px;
+	}
+	#testimonial section.wrapper div.top h1 {
+		font-size: 40px;
+	}
+	#blog section.wrapper div.top h1 {
+		font-size: 40px;
+	}
+	#blog section.wrapper div.bottom div.items div.content h3 {
+		font-size: 14px;
+	}
+	#blog section.wrapper div.bottom div.items div.content p {
+		font-size: 13px;
+	}
+	#blog section.wrapper div.bottom div.items div.bottom div.left a img {
+		display: none;
+	}
+	#blog section.wrapper div.bottom div.items div.bottom div.right a img {
+		display: none;
+	}
+	#blog section.wrapper div.bottom div.items div.bottom div.left span {
+		font-size: 10px;
+	}
+	#blog section.wrapper div.bottom div.items div.bottom div.right span {
+		display: none;
+	}
+	footer section.wrapper div.top div.left h1 img {
+		width: 130px;
+	}
+
+	footer section.wrapper div.top div.left p {
+		font-size: 13px;
+	}
+
+	footer section.wrapper div.top div.middle h1 {
+		font-size: 26px;
+	}
+	footer section.wrapper div.top div.middle p {
+		font-size: 13px;
+	}
+	footer section.wrapper div.top div.middle input[type=email] {
+		font-size: 13px;
+	}
+	footer section.wrapper div.top div.middle form a.button {
+		padding: 4px 11px;
+	}
+	footer section.wrapper div.top div.right h1 {
+		font-size: 26px;
+	}
+	footer section.wrapper div.top div.right ul li span.left {
+		font-size: 13px;
+	}
+	footer section.wrapper div.top div.right ul li small {
+		font-size: 12px;
+	}
+	footer section.wrapper div.top div.right ul li {
+		margin-bottom: 7px;
+	}
+	footer section.wrapper div.bottom p {
+		font-size: 10px;
+	}
+	#testimonial section.wrapper div.bottom div.item div.content {
+		width: 100%;
+		margin-left: 0;
+	}
+	#testimonial section.wrapper div.bottom div.container {
+		width: 15%;
+	}
+}
+
+@media all and (max-width: 640px){
+	#spotlight div.left small {
+		margin-right: 0;
+	}
+	#spotlight div.left small {
+		width: 15px;
+	}
+	#spotlight div.left h1 {
+		font-size: 41px;
+	}
+	#spotlight div.left div.buttons a.button1 {
+		margin-bottom: 5px;
+	}
+	#spotlight div.left p {
+		font-size: 14px;
+		margin: 20px 0 42px 0;
+	}
+	#spotlight div.right {
+		width: 65%;
+	}
+	#feature section.wrapper div.left h1 {
+		font-size: 37px;
+	}
+	#feature section.wrapper div.left p {
+		margin: 20px 0 33px 0;
+		font-size: 14px;
+	}
+	#about section.wrapper div.right h1 {
+		font-size: 34px;
+	}
+	#about section.wrapper div.right p {
+		font-size: 14px;
+		margin: 20px 0 33px 0;
+	}
+	#feature section.wrapper div.left a.button {
+		margin-bottom: 10px;
+	}
+	#faculty {
+		padding: 70px;
+		width: 90%;
+	}
+	#courses section.wrapper div.top h1{
+		font-size: 37px;
+	}
+	#testimonial section.wrapper div.bottom div.item div.content p {
+		font-size: 16px;
+	}
+	
+	
+	#testimonial section.wrapper div.bottom div.item div.content div.name h2 {
+		font-size: 15px;
+	}
+	#testimonial section.wrapper div.bottom div.item div.content div.name img {
+		width: 64px;
+	}
+	#advance section.wrapper div.right img {
+		width: 250px;
+	}
+	#faculty section.wrapper ul li span.number {
+		font-size: 30px;
+	}
+	#faculty section.wrapper ul li h4 {
+		font-size: 15px;
+	}
+	#feature section.wrapper div.right {
+		width: 100%;
+	}
+	#feature section.wrapper div.left {
+		width: 100%; 
+	}
+	footer section.wrapper div.top div.middle form a.button {
+		display: none;
+	}
+	footer section.wrapper div.top div.middle form a.button img {
+		display: none;
+	}
+	footer section.wrapper div.top div.left p {
+		font-size: 11px;
+	}
+	footer section.wrapper div.top div.middle p {
+		font-size: 11px;
+	}
+	footer section.wrapper div.top div.middle form {
+		width: 66%;
+	}
+	footer section.wrapper div.top div.middle input[type=email]{
+		font-size: 11px;
+	}
+	footer section.wrapper div.top div.middle form a.button img {
+		display: none;
+	}
+	footer section.wrapper div.top div.left a img {
+		width: 75%;
+	}
+}
+
+@media all and (max-width: 480px){
+	#spotlight div.right img {
+		display: none;
+	}
+	#spotlight div.left {
+		width: 100%;
+	}
+	#home section.wrapper header nav.middle ul {
+		display: none;
+	}
+	#about section.wrapper div.left img {
+		display: none;
+	}
+	#about section.wrapper div.right{
+		width: 100%;
+		margin-left: 0;
+	}
+	#faculty section.wrapper ul li small {
+		width: 80px;
+	}
+	#courses section.wrapper div.bottom ul {
+		flex-wrap: wrap;	
+	}
+	#courses section.wrapper div.bottom ul li {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#courses section.wrapper div.bottom ul li:last-child{
+		margin-bottom: 0;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.bottom div.left a img{
+		display: none;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.bottom div.left div.text h6 {
+		margin-bottom: 5px;
+	}
+	#advance section.wrapper div.right img {
+		display: none;
+	}
+	#advance section.wrapper div.left {
+		width: 100%;
+	}
+	#blog section.wrapper div.bottom ul {
+		flex-wrap: wrap;
+	}
+	#blog section.wrapper div.bottom ul li {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#blog section.wrapper div.bottom ul li:last-child {
+		margin-bottom: 0;
+	}
+	footer section.wrapper div.top {
+		flex-wrap: wrap;
+	}
+	footer section.wrapper div.top div.left{
+		width: 50%;
+	}
+	footer section.wrapper div.top div.right {
+		width: 50%;
+	}
+	footer section.wrapper div.top div.left p {
+		font-size: 14px;
+	}
+	footer section.wrapper div.top div.middle p {
+		font-size: 14px;
+	}
+	#spotlight div.right {
+		width: 0;
+	}
+	#about section.wrapper div.left {
+		width: 0;
+	}
+	#spotlight div.left p {
+		font-size: 19px;
+	}
+	#feature section.wrapper div.left p {
+		font-size: 19px;
+	}
+	#about section.wrapper div.right p {
+		font-size: 19px;
+	}
+	#advance section.wrapper div.left div.top p {
+		font-size: 19px;
+	}
+	#advance section.wrapper div.left div.top p {
+		font-size: 19px;
+	}
+	#testimonial section.wrapper div.bottom div.item div.content p {
+		font-size: 17px;
+	}
+	#testimonial section.wrapper div.bottom div.item div.content div.name img {
+		display: none;
+	}
+	#spotlight div.left div.buttons a.button1 {
+		font-size: 17px;
+	}
+	#spotlight div.left div.buttons a.button2 {
+		font-size: 16px;
+	}
+	#about section.wrapper div.right a.button {
+		font-size: 17px;
+	}
+	#courses section.wrapper div.bottom ul li div.items div.content div.top a.button {
+		font-size: 15px;
+	}
+
+	#courses section.wrapper div.bottom ul li div.items div.content p {
+		font-size: 16px;
+	}
+	#advance div.left div.bottom ul li p {
+		font-size: 20px;
+	}
+	#blog section.wrapper div.bottom div.items div.content p {
+		font-size: 16px;
+	}
+	#blog section.wrapper div.bottom div.items div.content h3 {
+		font-size: 18px;
+	}
+	#blog section.wrapper div.bottom div.items div.bottom div.left span {
+		font-size: 14px;
+	}
+	#feature section.wrapper div.left {
+		width: 100%;
+	}
+	#feature section.wrapper div.right ul {
+		flex-wrap: wrap;
+	}
+	#feature section.wrapper div.right ul li {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#feature section.wrapper div.right ul li:last-child{
+		margin-bottom: 0;
+	}
+	#faculty section.wrapper ul li span.number {
+		font-size: 45px;
+	}
+	#faculty section.wrapper ul li {
+		margin-right: 15px;
+	}
+	#faculty section.wrapper ul li:last-child {
+		margin-right: 0;
+	}
+	#faculty section.wrapper ul li h4 {
+		font-size: 20px;
+	}
+}
+
+@media all and (max-width: 360px){
+	#faculty{
+		padding: 0;
+		width: 100%;
+	}
+	footer section.wrapper div.top div.left{
+		width: 100%;
+	}
+	footer section.wrapper div.top div.middle {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	footer section.wrapper div.top div.right {
+		width: 100%;
+	}
+	footer section.wrapper div.top div.left p {
+		font-size: 16px;
+	}
+	footer section.wrapper div.top div.middle p {
+		font-size: 16px;
+	}
+	footer section.wrapper div.top div.right ul li small {
+		font-size: 16px;
+	}
+	footer section.wrapper div.top div.right ul li span.left {
+		font-size: 16px;
+	}
+	#faculty section.wrapper ul li small {
+		width: 65px;
+	}
+	#faculty section.wrapper ul li span.number {
+		font-size: 30px;
+	}
+	#faculty section.wrapper ul li h4 {
+		font-size: 14px;
+	}
+	#faculty section.wrapper ul {
+		display: none;
+	}
+	footer section.wrapper div.top div.left a img {
+		width: 60%;
+	}
+}
